@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <title>Đăng nhập</title>
+  </head>
+  <style>
+    #login {
+      font-family: Muli, sans-serif;
+      z-index: 99999;
+      position: relative;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+      width: 100%;
+      box-shadow: 1px 0px 60px 0 rgb(12 18 34 / 11%),
+        2px 2px 90px 0 rgb(23 33 54 / 11%);
+      padding: 2rem 2rem 6rem 2rem;
+    }
+    #login .close-login{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 23px;
+      color: #088178;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+    #login .close-login:hover{
+      transform: rotate(360deg);
+    }
+    #login h3.login-title {
+      font-size: 2rem;
+      text-align: center;
+      margin: 0px;
+    }
+    #login p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .form-group-login {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .form-group-login input {
+      border-radius: 8px;
+      border: 1px solid #088178;
+      width: 80%;
+      padding: 14px 10px;
+    }
+    .form-group-login input:not(:placeholder-shown) + label,
+    .form-group-login input:focus + label {
+      position: absolute;
+      padding: 0 5px;
+      top: 0%;
+      left: 10%;
+    }
+  
+    .form-group-login input:focus{
+      border: o;
+      outline: 0;
+      box-shadow: 0 0 0 2px #088178;
+    }
+    .form-group-login label {
+      user-select: none;
+      pointer-events: none;
+      color: #282828;
+      transition: all 0.4s;
+      position: absolute;
+      background-color: white;
+      padding: 0 5px;
+      top: 34%;
+      left: 10%;
+    }
+      .form-group-login input{
+      position: relative;
+    }
+    .form-group-login i{
+      position: absolute;
+      top: 37%;
+      right: 10%
+    }
+    .form-group-login i:hover{
+      cursor: pointer;
+    }
+    form#form-login .savepass-login {
+      /* margin-left: 2.7rem; */
+      margin: 0.5rem 0 1rem 2.7rem;
+    }
+    form#form-login .btn-login {
+      display: flex;
+      justify-content: center;
+    }
+    form#form-login button {
+      border: 0;
+      width: 84%;
+      background-color: #088178;
+      border-radius: 8px;
+      padding: 12px 10px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      font-family: Muli, sans-serif;
+    }
+    form#form-login button:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+    form#form-login .eye-none{
+      display: none;
+    }
+  </style>
+  <body>
+    
+    <div id="login">
+      <i class="far fa-times-circle close-login"></i>
+      <h3 class="login-title">Đăng ký hệ thống</h3>
+      <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a></p>
+      <form action="" id="form-login">
+        <div class="form-group-login">
+          <input type="text" name="" id="" class="email-ip" placeholder=" " />
+          <label for="">Họ tên</label>
+        </div>
+        <div class="form-group-login">
+          <input type="text" name="" id="" class="email-ip" placeholder=" " />
+          <label for="">Email</label>
+        </div>
+        <div class="form-group-login">
+          <input type="text" name="" id="" class="email-ip" placeholder=" " />
+          <label for="">Số điện thoại</label>
+        </div>
+        <div class="form-group-login">
+          <input type="text" name="" id="" placeholder=" " />
+          <i class="far fa-eye eye"></i>
+          <i class="far fa-eye-slash eye eye-none"></i>
+          <label for="">Mật khẩu</label>
+        </div>
+        <div class="btn-login pt-1">
+          <button>Đăng nhập</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
